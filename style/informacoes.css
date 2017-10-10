@@ -1,0 +1,35 @@
+#corpo {
+	width: 1270px;
+    height: 435px;
+	background-color: #f2f2f2;
+	border: solid;
+	border-color: #660000;
+}
+
+#corpo p {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+
+#folha {
+	width: 20%;
+	padding-left: 40%;
+}
+
+#face {
+	width: 4%;
+	padding-left: 42%;
+}
+
+#git {
+	width: 4%;
+	padding-left: 5%;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+}
+
+#logo {width: 30%;}

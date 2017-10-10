@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Escolas de Sumaré-SP</title>
+		<link rel="stylesheet" type="text/css" href="style/principal.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   			crossorigin=""/>
+   		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   			crossorigin="">
+   		</script>
+   		<script src="scripts/mapa.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="menu">
+    			<ul>
+        			<li><a href="#menu">Home</a></li>
+        			<li><a href="#escolas">Escolas</a></li>
+       				<li><a href="informacoes.html">Projeto e Autor</a></li>
+        			<li><a href="contato.html">Fale Conosco</a></li>
+    			</ul>
+			</nav>
+		</header>
+			<div id="corpo">
+				<br><br><br><h1>Mapeamento das Escolas de Sumaré - SP.</h1>
+				<div id="home">
+					<img src="images/brasao.png">
+					<p>
+						O site tem como objetivo apresentar ao usuário algumas escolas do múnicipio de Sumaré - São Paulo, com o intuito<br>
+						de facilitar a procura de escolas na região. fornecendo o endereço, telefone e sua geo-localização usando o projeto<br>
+						open-source Leaflet, uma framework Javascript que trabalha junto com a Mapbox que fornece o mapameamento geográfico<br>
+						da terra.
+					</p>
+					<img id="folha" src="images/folha.png"><br><br>	
+				</div>
+				<p>
+				<select id="escolas">
+					<option value="Selecione uma Escola:" id="opcao">Selecione uma Escola:</option>
+					<option value="Colégio Méson" id="meson">Colégio Méson</option>
+					<option value="E.E.Ângelo Campo Dall'Orto" id="angelo">E.E. Ângelo Campo Dall'Orto</option>
+					<option value="E.M.E.F.Antônio Palioto" id="palioto">E.M.E.F. Antônio Palioto</option>
+					<option value="E.M Palhacinho Dengoso" id="palhacinho">E.M Palhacinho Dengoso</option>
+					<option value="Escola Cristã de Sumaré" id="crista">Escola Cristã de Sumaré</option>
+					<option value="Escola Estadual Marianina de Rosis Moraes" id="marianina">Escola Estadual Marianina de Rosis Moraes</option>
+					<option value="Escola Estadual Maria Rosa Carolino dos Santos" id="rosa">Escola Estadual Maria Rosa Carolino dos Santos</option>
+					<option value="Escola Estadual Professora Maria Ivone Martins Rosa" id="ivone">Escola Estadual Professora Maria Ivone Martins Rosa</option>
+					<option value="Escola Integrada Educativa" id="educativa">Escola Integrada Educativa</option>
+					<option value="Escola Municipal Dr. Leandro Franceschini" id="leandro">Escola Municipal Dr. Leandro Franceschini</option>
+					<option value="Escola Municipal Jardim Bom Retiro" id="retiro">Escola Municipal Jardim Bom Retiro</option>
+					<option value="Escola Senai Celso Charuri" id="senai">Escola Senai "Celso Charuri"</option>
+					<option value="Marinalva Gimenes Colossal da Cunha" id="marinalva">Marinalva Gimenes Colossal da Cunha</option>
+  					<option value="Sesi 341 Centro Educacional" id="sesi">Sesi 341 Centro Educacional</option>
+  					<option value="Sonia Maria Maschio Baptista Profa" id="sonia">Sonia Maria Maschio Baptista Profa</option>
+				</select><br>
+				<button onclick="selecionarEscola()" id="consultar">Consultar</button>
+				</p>
+			<div id="mapid"></div>
+				<script type="text/javascript">
+					inicializarMapa();
+					inicializarMarcadores();
+				</script>
+			</div>
+		<footer>
+			<br><img id="logo" src="images/ifsp.png">
+			<p><b>Creative Commons</b></p>
+		</footer>
+	</body>
+</html>

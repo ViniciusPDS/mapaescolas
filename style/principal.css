@@ -1,0 +1,110 @@
+body {
+	border: solid;
+	border-color: #660000;
+}
+
+
+header {
+	width: 1265px;
+    height: 5px;
+}
+
+#corpo {
+    text-align: center;
+    width: 1280px;
+    height: 1300px;
+}
+
+#logo {
+	width: 30%;
+}
+
+#bandeira {
+	width: 20%;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+}
+
+#menu ul {
+	text-align: center;
+    padding:5px;
+    margin:0px;
+    background-color:#660000;
+    list-style: none;
+}
+
+#menu ul li { 
+	display: inline;
+	padding: 10px; 
+}
+
+#menu ul li a {
+    /*padding: 2px 10px;*/
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#660000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom:3px solid #CCCC00;
+}
+
+#menu ul li a:hover {
+    /*background-color:#FFFFFF;*/
+    color: #FFFFFF;
+    border-bottom:3px solid #FFFFFF;
+}
+
+#mapid { 
+	width: 700px; 
+	height: 500px;
+	top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#home p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+
+hr { 
+	color: #660000;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+} 
+
+#folha {
+	width: 20%;
+}
+
+#consultar {
+	background-color: #660000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#escolas {
+	width: 20%;
+    padding: 8px 8px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#topo {width: 5%;}
